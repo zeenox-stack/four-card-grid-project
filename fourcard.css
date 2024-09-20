@@ -1,0 +1,90 @@
+.grid { 
+    display: grid; 
+    grid-template-columns: auto minmax(200px, auto) auto; 
+    grid-template-rows: auto minmax(150px, auto) auto; 
+    grid-template-areas:  
+    ". team ." 
+    "Supervisor . Calculator" 
+    ". Karma ."
+    ; 
+    padding: 5em; 
+    gap: 5px;
+    
+} 
+
+body { 
+    background-color: hsl(0, 0%, 98%); 
+    text-align: center;
+}
+
+.team { 
+    grid-area: team; 
+    border-top: 5px solid hsl(0, 78%, 62%); 
+    margin-bottom: -90px;
+    
+} 
+
+.Supervisor { 
+   grid-area: Supervisor; 
+   border-top: 5px solid hsl(180, 62%, 55%);
+} 
+
+.Karma { 
+   grid-area: Karma; 
+   border-top: 5px solid hsl(34, 97%, 46%); 
+   margin-top: -90px;
+} 
+
+.calculator { 
+    grid-area: Calculator; 
+    border-top: 5px solid hsl(212, 86%, 64%);
+} 
+
+div { 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    padding: 2.5em;
+} 
+
+.img { 
+    display: flex; 
+    justify-content: right;
+} 
+
+h1 { 
+    font-family: poppins, sans-serif; 
+    font-weight: 250; 
+} 
+
+h2, h3 { 
+    font-family: poppins; 
+} 
+
+p { 
+    font-size: 15px; 
+    font-family: poppins, sans-serif; 
+} 
+
+.description { 
+    text-align: left;   
+} 
+
+@media screen and (max-width: 768px) { 
+    .grid {
+      grid-template-areas: 
+       "Supervisor Supervisor Supervisor" 
+       "team team team" 
+       "Karma Karma Karma" 
+       "Calculator Calculator Calculator"; 
+       padding: 5px;
+    } 
+
+    .team { 
+        margin: 5px;
+    } 
+
+    .Karma { 
+        margin: 5px;
+    } 
+
+}
