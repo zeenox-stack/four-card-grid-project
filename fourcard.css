@@ -20,24 +20,28 @@ body {
 .team { 
     grid-area: team; 
     border-top: 5px solid hsl(0, 78%, 62%); 
-    margin-bottom: -90px;
+    margin-bottom: -90px; 
+    background-color: white;
     
 } 
 
 .Supervisor { 
    grid-area: Supervisor; 
-   border-top: 5px solid hsl(180, 62%, 55%);
+   border-top: 5px solid hsl(180, 62%, 55%); 
+    background-color: white;
 } 
 
 .Karma { 
    grid-area: Karma; 
    border-top: 5px solid hsl(34, 97%, 46%); 
-   margin-top: -90px;
+   margin-top: -90px; 
+    background-color: white;
 } 
 
 .calculator { 
     grid-area: Calculator; 
-    border-top: 5px solid hsl(212, 86%, 64%);
+    border-top: 5px solid hsl(212, 86%, 64%); 
+    background-color: white;
 } 
 
 div { 
